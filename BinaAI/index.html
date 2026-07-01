@@ -657,6 +657,7 @@
                                                     <th>مبلغ کل</th>
                                                     <th>وضعیت پرداخت</th>
                                                     <th>جزئیات ساخت</th>
+                                                    <th>نظرسنجی</th>
                                                 </tr>
                                             </thead>
                                             <tbody id="user-orders-tbody">
@@ -664,22 +665,97 @@
                                             </tbody>
                                         </table>
                                     </div>
+                                    <p style="font-size: 0.8rem; color: var(--arvan-text-light); margin-top: 12px; text-align: center;">💡 پس از دریافت عینک، روی «ثبت نظر» کلیک کنید تا تجربه خرید خود را با ما در میان بگذارید.</p>
                                 </div>
 
-                                <!-- تب ۵: اعتبار و بیمه سابق -->
+                                <!-- تب ۵: اعتبار و بیمه -->
                                 <div id="sub-credit" class="sub-tab-content hidden">
-                                    <h3 style="font-size: 1.1rem; margin-bottom: 15px;">وضعیت پوشش بیمه‌ای متصل</h3>
-                                    <div class="info-box" style="background: #f0fdf4; border-color: #bbf7d0;">
-                                        <p style="font-size: 0.9rem; color: #166534;">✅ اتصال به سامانه متمرکز استعلام دفتری بیمه سلامت و تامین اجتماعی فعال است. سهمیه‌های درمانی عینک طبی شما سالی یک‌بار قابل کسر است.</p>
+                                    <h3 style="font-size: 1.1rem; margin-bottom: 15px;">وضعیت پوشش بیمه‌ای و اعتبار دیجیتال</h3>
+                                    
+                                    <!-- کارت‌های بیمه -->
+                                    <div class="grid-3" style="gap: 15px; margin-bottom: 20px;">
+                                        <div style="background:white;border:2px solid #bbf7d0;border-radius:12px;padding:16px;position:relative;">
+                                            <div style="position:absolute;top:-8px;right:12px;background:#10b981;color:white;font-size:0.65rem;padding:2px 8px;border-radius:10px;font-weight:bold;">متصل</div>
+                                            <div style="font-size:1.6rem;margin-bottom:8px;">🏥</div>
+                                            <h4 style="font-size:0.9rem;color:#065f46;margin-bottom:4px;">بیمه تامین اجتماعی</h4>
+                                            <p style="font-size:0.75rem;color:#6b7280;margin-bottom:8px;">سقف سالانه: ۳,۰۰۰,۰۰۰ تومان</p>
+                                            <div style="background:#f0fdf4;border-radius:6px;padding:8px;font-size:0.75rem;">
+                                                <div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span>سهمیه عینک:</span><span style="color:#15803d;font-weight:bold;">۱,۵۰۰,۰۰۰ تومان</span></div>
+                                                <div style="display:flex;justify-content:space-between;"><span>استفاده‌شده:</span><span style="color:#dc2626;">۵۵۰,۰۰۰ تومان</span></div>
+                                            </div>
+                                            <div style="background:#e2e8f0;border-radius:4px;height:6px;margin-top:10px;overflow:hidden;">
+                                                <div style="background:#10b981;height:100%;width:37%;border-radius:4px;"></div>
+                                            </div>
+                                            <p style="font-size:0.7rem;color:#6b7280;margin-top:4px;">۶۳٪ باقی‌مانده</p>
+                                        </div>
+                                        <div style="background:white;border:2px solid #bfdbfe;border-radius:12px;padding:16px;position:relative;">
+                                            <div style="position:absolute;top:-8px;right:12px;background:#3b82f6;color:white;font-size:0.65rem;padding:2px 8px;border-radius:10px;font-weight:bold;">فعال</div>
+                                            <div style="font-size:1.6rem;margin-bottom:8px;">💙</div>
+                                            <h4 style="font-size:0.9rem;color:#1e40af;margin-bottom:4px;">بیمه سلامت همگانی</h4>
+                                            <p style="font-size:0.75rem;color:#6b7280;margin-bottom:8px;">پوشش اپتومتری: ۶۰٪</p>
+                                            <div style="background:#eff6ff;border-radius:6px;padding:8px;font-size:0.75rem;">
+                                                <div style="display:flex;justify-content:space-between;margin-bottom:4px;"><span>سهمیه عینک:</span><span style="color:#1d4ed8;font-weight:bold;">۱,۲۰۰,۰۰۰ تومان</span></div>
+                                                <div style="display:flex;justify-content:space-between;"><span>استفاده‌شده:</span><span style="color:#dc2626;">۰ تومان</span></div>
+                                            </div>
+                                            <div style="background:#e2e8f0;border-radius:4px;height:6px;margin-top:10px;overflow:hidden;">
+                                                <div style="background:#3b82f6;height:100%;width:0%;border-radius:4px;"></div>
+                                            </div>
+                                            <p style="font-size:0.7rem;color:#6b7280;margin-top:4px;">۱۰۰٪ باقی‌مانده</p>
+                                        </div>
+                                        <div style="background:white;border:2px solid #e2e8f0;border-radius:12px;padding:16px;position:relative;opacity:0.7;">
+                                            <div style="position:absolute;top:-8px;right:12px;background:#6b7280;color:white;font-size:0.65rem;padding:2px 8px;border-radius:10px;font-weight:bold;">غیرفعال</div>
+                                            <div style="font-size:1.6rem;margin-bottom:8px;">🛡️</div>
+                                            <h4 style="font-size:0.9rem;color:#374151;margin-bottom:4px;">بیمه تکمیلی ایران</h4>
+                                            <p style="font-size:0.75rem;color:#6b7280;margin-bottom:8px;">نیاز به اتصال دارد</p>
+                                            <button onclick="alert('برای اتصال بیمه تکمیلی با پشتیبانی تماس بگیرید.')" style="background:#f1f5f9;color:#374151;border:1px solid #e2e8f0;border-radius:6px;padding:6px 12px;font-size:0.75rem;cursor:pointer;font-family:inherit;width:100%;">+ اتصال بیمه تکمیلی</button>
+                                        </div>
+                                    </div>
+
+                                    <!-- اعتبار دیجیتال -->
+                                    <div style="background:linear-gradient(135deg,#1e3a5f,#1a56db);border-radius:12px;padding:20px;color:white;">
+                                        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+                                            <div>
+                                                <p style="font-size:0.8rem;opacity:0.8;margin-bottom:4px;">💎 اعتبار خرید دیجیتال بینا‌آی</p>
+                                                <h3 style="font-size:1.8rem;font-weight:bold;margin:0;">۲,۰۰۰,۰۰۰ تومان</h3>
+                                                <p style="font-size:0.75rem;opacity:0.7;margin-top:4px;">قابل استفاده در تمام خریدها</p>
+                                            </div>
+                                            <div style="text-align:center;">
+                                                <div style="font-size:2rem;">🎯</div>
+                                                <p style="font-size:0.7rem;opacity:0.8;margin-top:4px;">نقطه وفاداری: ۴۸۰</p>
+                                                <p style="font-size:0.65rem;opacity:0.6;">۲۰ امتیاز تا سطح طلایی</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
 
-                                <!-- تب ۶: تنظیمات حساب سابق -->
+                                <!-- تب ۶: تنظیمات حساب -->
                                 <div id="sub-account" class="sub-tab-content hidden">
                                     <h3 style="font-size: 1.1rem; margin-bottom: 15px;">مشخصات پروفایل دیجیتال</h3>
-                                    <div class="grid-2" style="gap: 15px; font-size: 0.85rem;">
-                                        <div><strong>نام و نام خانوادگی:</strong> <span id="lbl-profile-name">Parsa Jam</span></div>
-                                        <div><strong>سطح دسترسی:</strong> خریدار تایید هویت شده</div>
+                                    <div class="grid-2" style="gap: 20px;">
+                                        <div style="background:white;border:1px solid var(--arvan-border);border-radius:12px;padding:20px;">
+                                            <h4 style="font-size:0.95rem;color:var(--arvan-dark);margin-bottom:15px;border-bottom:1px solid var(--arvan-border);padding-bottom:10px;">اطلاعات شخصی</h4>
+                                            <div style="display:flex;flex-direction:column;gap:12px;font-size:0.85rem;">
+                                                <div style="display:flex;justify-content:space-between;"><span style="color:#6b7280;">نام:</span><span id="lbl-profile-name" style="font-weight:bold;">پارسا جم</span></div>
+                                                <div style="display:flex;justify-content:space-between;"><span style="color:#6b7280;">ایمیل:</span><span>parsa.jam@gmail.com</span></div>
+                                                <div style="display:flex;justify-content:space-between;"><span style="color:#6b7280;">تلفن:</span><span>۰۹۱۲-***-۴۵۶۷</span></div>
+                                                <div style="display:flex;justify-content:space-between;"><span style="color:#6b7280;">کد ملی:</span><span>۰۰۲-***-**۳</span></div>
+                                                <div style="display:flex;justify-content:space-between;"><span style="color:#6b7280;">تاریخ تولد:</span><span>۱۳۸۳/۰۵/۱۲</span></div>
+                                                <div style="display:flex;justify-content:space-between;"><span style="color:#6b7280;">سطح دسترسی:</span><span style="background:#dcfce7;color:#15803d;padding:2px 8px;border-radius:10px;font-size:0.75rem;">احراز هویت شده ✅</span></div>
+                                            </div>
+                                        </div>
+                                        <div style="background:white;border:1px solid var(--arvan-border);border-radius:12px;padding:20px;">
+                                            <h4 style="font-size:0.95rem;color:var(--arvan-dark);margin-bottom:15px;border-bottom:1px solid var(--arvan-border);padding-bottom:10px;">داده‌های بیومتریک ذخیره‌شده</h4>
+                                            <div style="display:flex;flex-direction:column;gap:12px;font-size:0.85rem;">
+                                                <div style="display:flex;justify-content:space-between;"><span style="color:#6b7280;">فرم صورت:</span><span style="font-weight:bold;color:var(--arvan-primary);">بیضی (اسکن تایید شده)</span></div>
+                                                <div style="display:flex;justify-content:space-between;"><span style="color:#6b7280;">فاصله چشمی (PD):</span><span>۶۳.۵ میلی‌متر</span></div>
+                                                <div style="display:flex;justify-content:space-between;"><span style="color:#6b7280;">عرض پل بینی:</span><span>۱۸ میلی‌متر</span></div>
+                                                <div style="display:flex;justify-content:space-between;"><span style="color:#6b7280;">آخرین نسخه پزشکی:</span><span style="background:#eff6ff;color:#1d4ed8;padding:2px 8px;border-radius:10px;font-size:0.75rem;">آپلود شده ✅</span></div>
+                                                <div style="display:flex;justify-content:space-between;"><span style="color:#6b7280;">آدرس تحویل:</span><span>یزد، صفاییه</span></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="margin-top:15px;background:#fef3c7;border:1px solid #fcd34d;border-radius:8px;padding:12px;font-size:0.8rem;color:#92400e;">
+                                        ⚠️ اطلاعات پروفایل این دمو شبیه‌سازی‌شده است. در نسخه واقعی، اطلاعات با احراز هویت امن ذخیره می‌شود.
                                     </div>
                                 </div>
 
@@ -784,20 +860,50 @@
                             </div>
 
                             <div id="adm-kpi" class="admin-sub-content hidden">
-                                <h3 style="font-size: 1.1rem; color: var(--arvan-dark); margin-bottom: 5px;">📊 پیشخوان گزارشات، بازاریابی و تحلیل‌های کسب‌وکار</h3>
-                                <p style="font-size:0.8rem; color:var(--arvan-text-light); margin-bottom:15px;">رصد شاخص‌های استراتژیک رشد، هزینه جذب مشتری و خروجی کمپین‌های هک رشد پلتفرم.</p>
-                                <div class="grid-3" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; text-align:center;">
-                                    <div style="background:#eff6ff; padding:12px; border-radius:8px; border: 1px solid #bfdbfe;">
-                                        <span style="font-size:0.75rem; color:#1e40af;">هزینه جذب مشتری (CAC)</span>
-                                        <br><strong style="font-size:0.95rem; color:#1d4ed8; display:inline-block; margin-top:5px;">۴۲,۰۰۰ تومان</strong>
+                                <h3 style="font-size: 1.1rem; color: var(--arvan-dark); margin-bottom: 5px;">📊 پیشخوان گزارشات و تحلیل‌های کسب‌وکار</h3>
+                                <p style="font-size:0.8rem; color:var(--arvan-text-light); margin-bottom:15px;">رصد شاخص‌های استراتژیک رشد، هزینه جذب مشتری و خروجی کمپین‌های پلتفرم.</p>
+                                <div class="grid-3" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; text-align:center; margin-bottom:20px;">
+                                    <div style="background:#eff6ff; padding:16px; border-radius:10px; border: 1px solid #bfdbfe;">
+                                        <span style="font-size:0.7rem; color:#1e40af; display:block; margin-bottom:6px;">💰 هزینه جذب مشتری (CAC)</span>
+                                        <strong style="font-size:1.3rem; color:#1d4ed8; display:block;">۴۲,۰۰۰ تومان</strong>
+                                        <span style="font-size:0.65rem; color:#22c55e;">↓ ۱۸٪ نسبت به ماه قبل</span>
                                     </div>
-                                    <div style="background:#f0fdf4; padding:12px; border-radius:8px; border: 1px solid #bbf7d0;">
-                                        <span style="font-size:0.75rem; color:#166534;">نرخ تبدیل قیف فروش (CR)</span>
-                                        <br><strong style="font-size:0.95rem; color:#15803d; display:inline-block; margin-top:5px;">۴.۵ درصد</strong>
+                                    <div style="background:#f0fdf4; padding:16px; border-radius:10px; border: 1px solid #bbf7d0;">
+                                        <span style="font-size:0.7rem; color:#166534; display:block; margin-bottom:6px;">🔄 نرخ تبدیل قیف فروش (CR)</span>
+                                        <strong style="font-size:1.3rem; color:#15803d; display:block;">۴.۵٪</strong>
+                                        <span style="font-size:0.65rem; color:#22c55e;">↑ ۰.۸٪ نسبت به ماه قبل</span>
                                     </div>
-                                    <div style="background:#fff7ed; padding:12px; border-radius:8px; border: 1px solid #fed7aa;">
-                                        <span style="font-size:0.75rem; color:#9a3412;">ارزش طول عمر (LTV)</span>
-                                        <br><strong style="font-size:0.95rem; color:#c2410c; display:inline-block; margin-top:5px;">۱,۲۰۰,۰۰۰ تومان</strong>
+                                    <div style="background:#fff7ed; padding:16px; border-radius:10px; border: 1px solid #fed7aa;">
+                                        <span style="font-size:0.7rem; color:#9a3412; display:block; margin-bottom:6px;">💎 ارزش طول عمر (LTV)</span>
+                                        <strong style="font-size:1.3rem; color:#c2410c; display:block;">۱,۲۰۰,۰۰۰ تومان</strong>
+                                        <span style="font-size:0.65rem; color:#22c55e;">↑ ۱۲٪ نسبت به فصل قبل</span>
+                                    </div>
+                                    <div style="background:#fdf4ff; padding:16px; border-radius:10px; border: 1px solid #e9d5ff;">
+                                        <span style="font-size:0.7rem; color:#6b21a8; display:block; margin-bottom:6px;">👤 کاربران فعال ماه</span>
+                                        <strong style="font-size:1.3rem; color:#7c3aed; display:block;">۱,۲۴۷</strong>
+                                        <span style="font-size:0.65rem; color:#22c55e;">↑ ۳۴٪ رشد ماهانه</span>
+                                    </div>
+                                    <div style="background:#f0f9ff; padding:16px; border-radius:10px; border: 1px solid #bae6fd;">
+                                        <span style="font-size:0.7rem; color:#0369a1; display:block; margin-bottom:6px;">📦 سفارشات این ماه</span>
+                                        <strong style="font-size:1.3rem; color:#0284c7; display:block;">۳۸۶</strong>
+                                        <span style="font-size:0.65rem; color:#22c55e;">↑ ۲۲٪ نسبت به ماه قبل</span>
+                                    </div>
+                                    <div style="background:#fff1f2; padding:16px; border-radius:10px; border: 1px solid #fecdd3;">
+                                        <span style="font-size:0.7rem; color:#9f1239; display:block; margin-bottom:6px;">⭐ میانگین امتیاز کاربران</span>
+                                        <strong style="font-size:1.3rem; color:#e11d48; display:block;">۴.۷ / ۵</strong>
+                                        <span style="font-size:0.65rem; color:#6b7280;">بر اساس ۸۴۳ نظر</span>
+                                    </div>
+                                </div>
+                                <!-- نمودار ساده فروش ماهانه -->
+                                <div style="background:white;border:1px solid var(--arvan-border);border-radius:10px;padding:15px;">
+                                    <h4 style="font-size:0.85rem;color:var(--arvan-dark);margin-bottom:12px;">نمودار فروش ۶ ماه اخیر (میلیون تومان)</h4>
+                                    <div style="display:flex;align-items:flex-end;gap:8px;height:90px;" id="kpi-sales-chart">
+                                        <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;"><span style="font-size:0.65rem;color:#374151;font-weight:bold;">۳۸</span><div style="width:100%;background:linear-gradient(to top,#1a56db,#60a5fa);border-radius:4px 4px 0 0;height:23px;"></div><span style="font-size:0.6rem;color:#6b7280;">فروردین</span></div>
+                                        <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;"><span style="font-size:0.65rem;color:#374151;font-weight:bold;">۵۲</span><div style="width:100%;background:linear-gradient(to top,#1a56db,#60a5fa);border-radius:4px 4px 0 0;height:31px;"></div><span style="font-size:0.6rem;color:#6b7280;">اردیبهشت</span></div>
+                                        <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;"><span style="font-size:0.65rem;color:#374151;font-weight:bold;">۴۷</span><div style="width:100%;background:linear-gradient(to top,#1a56db,#60a5fa);border-radius:4px 4px 0 0;height:28px;"></div><span style="font-size:0.6rem;color:#6b7280;">خرداد</span></div>
+                                        <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;"><span style="font-size:0.65rem;color:#374151;font-weight:bold;">۶۸</span><div style="width:100%;background:linear-gradient(to top,#1a56db,#60a5fa);border-radius:4px 4px 0 0;height:41px;"></div><span style="font-size:0.6rem;color:#6b7280;">تیر</span></div>
+                                        <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;"><span style="font-size:0.65rem;color:#374151;font-weight:bold;">۸۵</span><div style="width:100%;background:linear-gradient(to top,#1a56db,#60a5fa);border-radius:4px 4px 0 0;height:51px;"></div><span style="font-size:0.6rem;color:#6b7280;">مرداد</span></div>
+                                        <div style="flex:1;display:flex;flex-direction:column;align-items:center;gap:4px;"><span style="font-size:0.65rem;color:#374151;font-weight:bold;">۱۱۲</span><div style="width:100%;background:linear-gradient(to top,#059669,#34d399);border-radius:4px 4px 0 0;height:67px;"></div><span style="font-size:0.6rem;color:#6b7280;">شهریور</span></div>
                                     </div>
                                 </div>
                             </div>
